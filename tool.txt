@@ -1,0 +1,27 @@
+Tool Name:
+book_mentor_appointment
+Tool Description:
+Check availability and book a mentorship appointment with Farzeen.
+Tool Parameter:
+{
+  "type": "object",
+  "properties": {
+    "date": {
+      "description": "Date in YYYY-MM-DD format (e.g. 2026-10-05)",
+      "type": "string"
+    },
+    "name": {
+      "description": "Name of the person requesting appointment",
+      "type": "string"
+    },
+    "time": {
+      "description": "Time in HH:MM 24-hour format (e.g. 17:00 for 5 PM)",
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "date",
+    "time"
+  ]
+}
